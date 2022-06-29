@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <style>
+        *{
+            box-sizing: border-box;
+            
+        }
+        .header{
+            background-color: coral;
+            color: white;
+            padding: 1% 5%;
+            text-align: center;
+        }
+
+        .nav-menu{
+            padding: 1% 5%;
+            background-color: #39a4ac;
+        }
+
+        .nav-menu a{
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+            padding: 10px;
+            display: block;
+        }
+
+        .main{
+            padding: 1% 5%;
+            background-color: turquoise;
+            
+        }
+
+        .aside{
+            padding: 1% 5%;
+            background-color: #39a4ac;
+            text-align: right;
+            
+        }
+
+        .footer{
+            background-color: black;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 0.8rem;
+        }
+
+        /* For desktop: */
+        .col-1 {width: 8.33%;}
+        .col-2 {width: 16.66%;}
+        .col-3 {width: 25%;}
+        .col-4 {width: 33.33%;}
+        .col-5 {width: 41.66%;}
+        .col-6 {width: 50%;}
+        .col-7 {width: 58.33%;}
+        .col-8 {width: 66.66%;}
+        .col-9 {width: 75%;}
+        .col-10 {width: 83.33%;}
+        .col-11 {width: 91.66%;}
+        .col-12 {width: 100%;}
+
+
+        [class*="col-"] {
+            float: left;
+            padding: 10px;
+        }
+
+        .row::after{
+            content: '';
+            clear: both;
+            display: table;
+        }
+
+        @media only screen and (max-width: 768px) {
+            /* For mobile phones: */
+            [class*="col-"] {
+                width: 100%;
+            }
+
+            .nav-menu a{
+                text-align: center;
+                background-color: coral;
+                margin: 10px;
+            }
+
+        }
+
+        .social-media{
+            background-color: gray;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .btn{
+            border:none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-size: 2rem;
+           
+        }
+        .btn:hover{
+            background-color: gray;
+
+        }
+        #search{
+            background-position: 8px 15px;
+            font-size:  1rem;
+            padding: 15px 40px;
+            background-color: white;
+            width: 150px;
+            transition: width 0.3s ease-in-out;
+            
+        }
+        #search:focus{
+            background-color: white;
+            width:80%;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Lions Question</h1>
+    </div>
+
+    <div class="row">
+        <div class="nav-menu col-2">
+            <a href="file:///C:/Users/Windows/Desktop/Question/Lions_Question.html">Home</a>
+            <a href="file:///C:/Users/Windows/Desktop/Question/tutorial.html">Tutorial</a>
+            <a href="file:///C:/Users/Windows/Desktop/Question/Question.html">Question</a>
+            <a href="file:///C:/Users/Windows/Desktop/Question/About_Me.html">About Me</a>
+        </div>
+    
+       
+        
+        
+    </div>
+    <br> <br>
+
+    <div class="footer">
+
+        <button class="btn" onclick="window.open('http://www.youtube.com')" class="btn request-callback"><i class="media-icon fa fa-youtube-play" style="color: #c4302b;" aria-hidden="true"></i></button>
+        <button class="btn" onclick="window.open('https://www.facebook.com')" class="btn request-callback"><i class="fa fa-facebook" style="color:  #3b5998;" aria-hidden="true"></i></button>
+        <button class="btn" onclick="window.open('http://www.google.com')" class="btn request-callback"><i class="fa fa-google" aria-hidden="true"></i></button>
+        <button class="btn" onclick="window.open('http://www.youtube.com')" class="btn request-callback"><i class="fa fa-skype" style="color:  #3b5998;" aria-hidden="true"></i></button>
+        <button class="btn" onclick="window.open('http://www.youtube.com')" class="btn request-callback"><i class="fa fa-envelope-o" style="color:  #000000;" aria-hidden="true"></i></button>
+        <button class="btn" onclick="window.open('https://www.linkedin.com')" class="btn request-callback"><i class="fa fa-linkedin" style="color:  #3b5998;" aria-hidden="true"></i></button>
+        <button class="btn" onclick="window.open('https://github.com')" class="btn request-callback"><i class="fa fa-github" aria-hidden="true" style="color: #000000;"></i></button>
+        <br> <br>
+
+        &copy; Study With Lion Vai 2022. Developed By Shuvo
+    </div>
+
+</body>
+</html>
